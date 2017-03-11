@@ -1,6 +1,7 @@
 #include <iostream>
 
-#include "ball.h"
+#include "ball_sort.h"
+#include "insert_sort.h"
 
 void dump(int* data, const int len) {
   for (int i = 0; i < len; ++i) {
@@ -20,7 +21,10 @@ int main(int argc, char* argv[]) {
   ball_sort(unsort_nums, len);
   dump(unsort_nums, len);
 
-  
+  // 2.0@ 插入排序
+  insert_sort(unsort_nums, len);
+  dump(unsort_nums, len);
+
 
   return 0;
 }
