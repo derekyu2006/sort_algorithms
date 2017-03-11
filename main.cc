@@ -17,14 +17,19 @@ int main(int argc, char* argv[]) {
   std::cout << "Before sortting.." << std::endl;
   dump(unsort_nums, len);
 
+#if 0
   // 1.0@ 冒泡排序
   ball_sort(unsort_nums, len);
   dump(unsort_nums, len);
 
-  // 2.0@ 插入排序
+  // 2.0@ 直接插入排序
   insert_sort(unsort_nums, len);
   dump(unsort_nums, len);
+#endif
 
+  // 3.0@ 二分插入排序
+  binary_insert_sort(unsort_nums, len);
+  dump(unsort_nums, len);
 
   return 0;
 }
