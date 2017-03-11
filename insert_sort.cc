@@ -24,7 +24,7 @@ void binary_insert_sort(int* a, const int n) {
       int low = 0;
       int high = i - 1;
       int data = a[i];
-      while (low <= high) {
+      while (low <= high) { // 特别注意
         int mid = (low + high) / 2;
         if (data < a[mid]) high = mid - 1;
         if (data >= a[mid]) low = mid + 1;
