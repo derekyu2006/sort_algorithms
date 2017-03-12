@@ -5,6 +5,7 @@ cc_binary (
     'ball_sort.cc',
     'insert_sort.cc',
     'select_sort.cc',
+    'quick_sort.cc',
   ],
   deps = [
   ],
