@@ -24,10 +24,12 @@ void binary_insert_sort(int* a, const int n) {
       int low = 0;
       int high = i - 1;
       int data = a[i];
+      int mid = 0;
       while (low <= high) { // 特别注意
-        int mid = (low + high) / 2;
+        mid = (low + high) / 2;
         if (data < a[mid]) high = mid - 1;
-        if (data >= a[mid]) low = mid + 1;
+        if (data > a[mid]) low = mid + 1;
+        if (data == a[mid]) break;
       }
 
       for (int ix = i; ix > low; --ix) {

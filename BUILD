@@ -4,6 +4,7 @@ cc_binary (
     'main.cc',
     'ball_sort.cc',
     'insert_sort.cc',
+    'select_sort.cc',
   ],
   deps = [
   ],
