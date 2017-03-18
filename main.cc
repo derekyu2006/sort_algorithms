@@ -5,6 +5,7 @@
 #include "select_sort.h"
 #include "quick_sort.h"
 #include "merge_sort.h"
+#include "heap_sort.h"
 
 void dump(int* data, const int len) {
   for (int i = 0; i < len; ++i) {
@@ -40,10 +41,14 @@ int main(int argc, char* argv[]) {
   // 5.0@ 快速排序
   quick_sort(unsort_nums, len);
   dump(unsort_nums, len);
-#endif
 
   // 6.0@ 归并排序
   merge_sort(unsort_nums, len);
+  dump(unsort_nums, len);
+#endif
+
+  // 7.0@ 堆排序
+  heap_sort(unsort_nums, len);
   dump(unsort_nums, len);
 
   return 0;

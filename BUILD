@@ -7,6 +7,7 @@ cc_binary (
     'select_sort.cc',
     'quick_sort.cc',
     'merge_sort.cc',
+    'heap_sort.cc',
   ],
   deps = [
   ],
