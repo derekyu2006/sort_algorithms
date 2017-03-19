@@ -29,7 +29,7 @@ void heap_sort(int* a, const int n) {
 void build_heap(int* a, const int n) {
   int length = static_cast<int>(n);
   int begin = length / 2 - 1; // 得到最后一个元素的父结点
-  for (int i = begin; i >= 0; --i) { // 调整的时候按照从叶子到根结点的方法进行.
+  for (int i = begin; i >= 1; --i) { // 调整的时候按照从叶子到根结点的方法进行.
     adjust_heap(a, length, i);
   }
 }
